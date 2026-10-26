@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quinn Tattoos — Ottawa · Halloween Flash Day Oct 31</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap');
+*{margin:0;box-sizing:border-box}body{background:#0c0c0d;color:#f2efe9;font-family:'Space Grotesk',sans-serif}
+a{color:#ff4b2e}
+.flashbar{background:#ff4b2e;color:#0c0c0d;font-family:'Archivo Black';text-transform:uppercase;padding:12px 20px;text-align:center;font-size:15px;letter-spacing:.04em}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;border-bottom:2px solid #f2efe9}
+.logo{font-family:'Archivo Black';font-size:24px;text-transform:uppercase}.logo span{color:#ff4b2e}
+header nav a{color:#f2efe9;text-decoration:none;margin-left:22px;text-transform:uppercase;font-size:13px;letter-spacing:.12em}
+.hero{padding:70px 28px 40px;max-width:1100px;margin:auto}
+.hero h1{font-family:'Archivo Black';font-size:clamp(56px,11vw,132px);line-height:.9;text-transform:uppercase}
+.hero h1 span{color:transparent;-webkit-text-stroke:2px #f2efe9}
+.hero p{font-size:20px;max-width:52ch;margin-top:22px;line-height:1.55;color:#cfcabf}
+.count{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.count div{border:2px solid #f2efe9;padding:16px 22px;text-align:center}
+.count b{display:block;font-family:'Archivo Black';font-size:34px;color:#ff4b2e}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#f2efe9;border:2px solid #f2efe9;max-width:1100px;margin:30px auto}
+.cell{background:#0c0c0d;padding:34px 26px;min-height:170px}
+.cell h3{font-family:'Archivo Black';text-transform:uppercase;font-size:20px;margin-bottom:10px}
+.cell p{color:#cfcabf;line-height:1.55}
+.steps{max-width:1100px;margin:auto;padding:20px 28px 60px}
+.steps h2{font-family:'Archivo Black';text-transform:uppercase;font-size:36px;margin-bottom:18px}
+.steps ol{margin-left:22px;line-height:1.9;font-size:18px;color:#e8e4da}
+form{max-width:1100px;margin:0 auto 70px;padding:28px;border:2px solid #ff4b2e;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form h2{grid-column:1/-1;font-family:'Archivo Black';text-transform:uppercase}
+input,select,textarea{background:#17171a;border:1px solid #3a3a40;color:#f2efe9;padding:14px;font-family:'Space Grotesk';width:100%}
+textarea{grid-column:1/-1}button{grid-column:1/-1;background:#ff4b2e;border:0;padding:16px;font-family:'Archivo Black';text-transform:uppercase;cursor:pointer}
+footer{border-top:2px solid #f2efe9;padding:24px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}form{grid-template-columns:1fr;margin:0 20px 60px}}
+</style></head><body>
+<div class="flashbar">Halloween Flash Day — Friday, October 31 · Ottawa · Sign up below</div>
+<header><div class="logo">Quinn<span>.</span>Tattoos</div><nav><a href="#flash">Flash Day</a><a href="#book">Book</a><a href="https://www.instagram.com/quinn.tattoos" target="_blank" rel="noopener">Instagram</a></nav></header>
+<div class="hero">
+<h1>Tattoo<br><span>by Quinn</span></h1>
+<p>Quinn is a solo tattoo artist working from a private studio in Ottawa. Flash, custom work, and one clear way to book — no digging through Story highlights to find the form.</p>
+<div class="count"><div><b>OCT 31</b>Flash Day</div><div><b>6,691</b>IG followers</div><div><b>1</b>Booking form</div></div>
+</div>
+<div class="grid" id="flash">
+ <div class="cell"><h3>Flash Day — Oct 31</h3><p>Halloween flash day, announced October 23. Pick a design from Quinn's flash on Instagram, then claim your spot with the booking request form on this page.</p></div>
+ <div class="cell"><h3>Custom Work</h3><p>Got your own idea? Send the concept, placement, and rough size in the form below. Quinn replies with next steps — the same intake as the JotForm, on a page that also shows the work.</p></div>
+ <div class="cell"><h3>Private Studio</h3><p>A private-studio appointment, not a walk-in shop floor. Booking ahead is how it works — for flash days and custom pieces alike.</p></div>
+</div>
+<div class="steps"><h2>How booking works</h2><ol>
+<li>Check @quinn.tattoos for current flash and availability posts.</li>
+<li>Submit the booking request form below — design, placement, size, your contact.</li>
+<li>Quinn confirms your spot and deposit details directly with you.</li></ol></div>
+<form id="book" onsubmit="document.getElementById('qmsg').textContent='Request noted — this is a concept form, so nothing was sent. Reach Quinn via Instagram @quinn.tattoos.';return false">
+<h2>Booking request</h2>
+<input required placeholder="Your name"><input placeholder="Instagram handle or email">
+<select><option>Halloween Flash Day — Oct 31</option><option>Custom piece</option><option>Other flash</option></select>
+<input placeholder="Placement + rough size">
+<textarea rows="3" placeholder="Describe the design"></textarea>
+<button>Request my spot (concept)</button><div id="qmsg" style="grid-column:1/-1;color:#ffb3a6"></div></form>
+<footer><span>@quinn.tattoos · Private studio, Ottawa</span><span>Concept built by Jake Hersky (hersky.info)</span></footer>
+</body></html>
